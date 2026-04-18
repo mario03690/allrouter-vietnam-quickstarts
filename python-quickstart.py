@@ -2,7 +2,7 @@ from openai import OpenAI
 import os
 
 # pip install openai
-# export ALLROUTER_API_KEY="your_api_key"
+# export ALLROUTER_API_KEY="***"
 
 client = OpenAI(
     base_url="https://allrouter.ai/v1",
@@ -10,7 +10,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="claude-3-opus",
+    model="gpt-4o-mini",
     messages=[
         {"role": "user", "content": "Say hello in one short sentence."}
     ],

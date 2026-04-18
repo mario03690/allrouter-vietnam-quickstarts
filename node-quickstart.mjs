@@ -1,7 +1,7 @@
 import OpenAI from "openai";
 
 // npm install openai
-// export ALLROUTER_API_KEY="your_api_key"
+// export ALLROUTER_API_KEY="***"
 
 const client = new OpenAI({
   apiKey: process.env.ALLROUTER_API_KEY,
@@ -9,7 +9,7 @@ const client = new OpenAI({
 });
 
 const response = await client.chat.completions.create({
-  model: "claude-3-opus",
+  model: "gpt-4o-mini",
   messages: [
     { role: "user", content: "Say hello in one short sentence." },
   ],

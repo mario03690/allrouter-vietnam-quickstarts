@@ -45,9 +45,23 @@ This repo contains minimal quickstart examples and companion assets based on pub
 3. `node-quickstart.mjs`
 4. then longer CLI / agent workflows
 
+## Quick troubleshoot order
+
+1. Confirm `ALLROUTER_API_KEY` is exported in the current shell.
+2. Run the root `curl-quickstart.sh` first to verify the shortest possible request path.
+3. If curl works but SDK code fails, check your local dependency install (`openai` package / Node package) before changing the network path.
+4. If a model name fails, switch the `model` field to one that is available in your account instead of changing the whole workflow at once.
+5. Only test longer CLI or agent loops after a minimal request is stable.
+
+## Companion article status
+
+- article-03 Viblo URL: https://viblo.asia/p/cach-dung-codex-cli-tai-viet-nam-khong-can-vpn-setup-tu-a-den-z-gjLN0MeA432
+- article-02 Viblo draft: ready in local asset pack, pending publish
+- article-01 Viblo draft: ready in local asset pack, pending publish
+
 ## Notes
 
 - Current examples are grounded in publicly visible homepage messaging and the OpenAI-compatible base URL `https://allrouter.ai/v1`.
-- The safer default example model in this repo is now `gpt-4o-mini` because it is used consistently across the newer article companion assets.
+- The safer default example model in this repo is `gpt-4o-mini` because it is used consistently across the newer companion assets and is safer than leaving older speculative examples in place.
 - Replace the model string if your account exposes a different available model.
 - Do not assume unpublished API behavior, hidden model inventory, or undocumented Codex-specific support.
