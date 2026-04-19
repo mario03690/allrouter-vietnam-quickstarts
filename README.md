@@ -56,8 +56,21 @@ This repo contains minimal quickstart examples and companion assets based on pub
 ## Companion article status
 
 - article-03 Viblo URL: https://viblo.asia/p/cach-dung-codex-cli-tai-viet-nam-khong-can-vpn-setup-tu-a-den-z-gjLN0MeA432
-- article-02 Viblo draft: ready in local asset pack, pending publish
+- article-02 Viblo draft: ready in local asset pack, pending publish from logged-in local Chrome
 - article-01 Viblo draft: ready in local asset pack, pending publish
+
+## Distribution workflow
+
+1. Publish or update the Viblo article from a logged-in local Chrome session.
+2. Copy the real public Viblo URL into the matching `telegram-summary.md` file.
+3. Reuse the same article folder for Telegram copy, GitHub examples, and follow-up distribution notes.
+4. Record the outcome in the local tracking CSV before moving to the next article.
+
+## Current queue
+
+1. article-02 — ready for Viblo publish attempt and Telegram URL backfill
+2. article-01 — ready as fallback/next publish asset after article-02
+3. article-03 — already published, keep monitoring T+1 / T+3 / T+7 signals
 
 ## Notes
 
