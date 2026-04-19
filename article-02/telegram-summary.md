@@ -19,3 +19,11 @@ Bài viết đi qua:
 - thứ tự debug để không mất thời gian sửa nhầm chỗ
 
 🔗 Đọc đầy đủ: [VIBLO_URL]
+
+## Telegram follow-up without URL yet
+- Hook: Nếu bạn đang bị kẹt ở bước billing, đừng đổi 5 biến cùng lúc; hãy test minimal request trước.
+- CTA mềm: Khi có URL Viblo thật, thay `[VIBLO_URL]` rồi đăng lại bản Short hoặc Long bên trên.
+- Safe note: Chưa có URL công khai thì không gửi bản có link để tránh phát tán link giả.
+
+## Follow-up Draft
+Nếu bạn đang ở Việt Nam và từng bị kẹt ở bước billing hoặc credit path khi setup AI coding tools, bài này gom lại đúng thứ tự kiểm tra để đỡ mất thời gian debug sai chỗ. Khi Viblo URL có thật, chỉ cần thay `[VIBLO_URL]` rồi có thể dùng ngay cho Telegram.

@@ -53,24 +53,21 @@ This repo contains minimal quickstart examples and companion assets based on pub
 4. If a model name fails, switch the `model` field to one that is available in your account instead of changing the whole workflow at once.
 5. Only test longer CLI or agent loops after a minimal request is stable.
 
-## Companion article status
-
-- article-03 Viblo URL: https://viblo.asia/p/cach-dung-codex-cli-tai-viet-nam-khong-can-vpn-setup-tu-a-den-z-gjLN0MeA432
-- article-02 Viblo draft: ready in local asset pack, pending publish from logged-in local Chrome
-- article-01 Viblo draft: ready in local asset pack, pending publish
-
-## Distribution workflow
-
-1. Publish or update the Viblo article from a logged-in local Chrome session.
-2. Copy the real public Viblo URL into the matching `telegram-summary.md` file.
-3. Reuse the same article folder for Telegram copy, GitHub examples, and follow-up distribution notes.
-4. Record the outcome in the local tracking CSV before moving to the next article.
-
 ## Current queue
 
-1. article-02 — ready for Viblo publish attempt and Telegram URL backfill
+1. article-02 — editor rehydrated in logged-in local Chrome on 2026-04-19; title/body/3 tags (`ai`, `workflow`, `developer`) were filled again and one publish click was executed, but no confirmed public URL was returned in this run
 2. article-01 — ready as fallback/next publish asset after article-02
 3. article-03 — already published, keep monitoring T+1 / T+3 / T+7 signals
+
+## Draft recovery checklist
+
+If article-02 still blocks on the next run, use this order instead of rebuilding the asset pack:
+
+1. Open Viblo in the same logged-in local Chrome session and visit `https://viblo.asia/me/posts/drafts` first.
+2. Check whether article-02 was auto-saved as a draft after the publish click.
+3. If found, open the draft, confirm the body and tags are intact, then retry publish once.
+4. Only after a real `/p/...` URL appears should `telegram-summary.md` be backfilled and distributed.
+5. If the draft is missing, rebuild from the local article file and keep article-01 as the fallback publish target.
 
 ## Notes
 

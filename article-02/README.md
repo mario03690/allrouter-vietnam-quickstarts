@@ -32,14 +32,15 @@ Use these quickstarts as companion assets for the Viblo article about billing fr
 
 ## Distribution status
 
-- Viblo status: publish attempt executed from logged-in local Chrome on 2026-04-19
-- Current blocker: editor accepted title/body/tags, but publish click did not yield a confirmed public URL in this run
+- Viblo status: two local-Chrome-assisted publish attempts have now been executed on 2026-04-19
+- Current blocker: the editor accepted title/body/tags and the publish button was clicked again, but the browser still did not leave `/publish/post`, so no confirmed public URL was captured in this run
 - Telegram status: summary copy is ready locally and only needs the real Viblo URL backfilled
 - GitHub status: companion examples are already safe to reference publicly
 
 ## Recommended next operator check
 
-1. Re-open the Viblo editor from local Chrome and verify whether this post was saved as draft or still only exists in the active editor session.
-2. If the editor still contains the article, retry publish once and confirm the browser actually leaves `/publish/post`.
-3. Only after obtaining the real public URL, replace `[VIBLO_URL]` inside `telegram-summary.md` and send the Telegram post.
-4. Keep article-01 as the fallback asset if article-02 remains blocked.
+1. Re-open `https://viblo.asia/me/posts/drafts` from the same logged-in local Chrome session and verify whether this post was auto-saved after either publish click.
+2. If a draft exists, open it and confirm the title, full markdown body, and tags `ai/workflow/developer` are still present before retrying publish.
+3. If no draft exists, repopulate from `AllRouter_Viblo_Article_02_Final.md` rather than rewriting by hand.
+4. Only after obtaining the real public URL, replace `[VIBLO_URL]` inside `telegram-summary.md` and send the Telegram post.
+5. Keep article-01 as the fallback asset if article-02 remains blocked.
