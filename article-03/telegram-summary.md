@@ -5,7 +5,7 @@
 
 Một setup tốt không chỉ là chạy được một lần. Nó phải đủ ổn để ngày mai mở máy lên vẫn dùng được. Bài này đi từ minimal request, export key rõ ràng, test curl trước, rồi mới tăng dần lên CLI workflow dài hơn.
 
-🔗 Đọc đầy đủ: [VIBLO_URL]
+🔗 Đọc đầy đủ: https://viblo.asia/p/cach-dung-codex-cli-tai-viet-nam-khong-can-vpn-setup-tu-a-den-z-gjLN0MeA432
 
 ## Long
 📝 Cách dùng Codex CLI tại Việt Nam không cần VPN: setup từ A đến Z
@@ -18,4 +18,4 @@ Bài viết đi qua:
 - cách test access path bằng Python/curl trước khi giao việc dài cho CLI
 - cách giữ workflow OpenAI-compatible để giảm switching friction
 
-🔗 Đọc đầy đủ: [VIBLO_URL]
+🔗 Đọc đầy đủ: https://viblo.asia/p/cach-dung-codex-cli-tai-viet-nam-khong-can-vpn-setup-tu-a-den-z-gjLN0MeA432
