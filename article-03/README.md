@@ -29,3 +29,9 @@ How to use:
 
 Suggested article relation:
 Use these examples as a companion pack for the Viblo article about Codex-style CLI setup in Vietnam without over-relying on VPN workarounds.
+
+## Live distribution status
+
+- Viblo URL: https://viblo.asia/p/cach-dung-codex-cli-tai-viet-nam-khong-can-vpn-setup-tu-a-den-z-gjLN0MeA432
+- Telegram summary: local draft already backfilled with the real Viblo URL and ready for manual send
+- Monitoring: keep updating T+1 / T+3 / T+7 observations in the state tracker before promoting the next article

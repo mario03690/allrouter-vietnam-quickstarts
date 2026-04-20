@@ -53,11 +53,15 @@ This repo contains minimal quickstart examples and companion assets based on pub
 4. If a model name fails, switch the `model` field to one that is available in your account instead of changing the whole workflow at once.
 5. Only test longer CLI or agent loops after a minimal request is stable.
 
+## Published assets
+
+- article-03 — Viblo: https://viblo.asia/p/cach-dung-codex-cli-tai-viet-nam-khong-can-vpn-setup-tu-a-den-z-gjLN0MeA432
+
 ## Current queue
 
-1. article-02 — editor rehydrated in logged-in local Chrome on 2026-04-19; title/body/3 tags (`ai`, `workflow`, `developer`) were filled again and one publish click was executed, but no confirmed public URL was returned in this run
-2. article-01 — ready as fallback/next publish asset after article-02
-3. article-03 — already published, keep monitoring T+1 / T+3 / T+7 signals
+1. article-02 — check `https://viblo.asia/me/posts/drafts` in the same logged-in local Chrome session first; if the auto-saved draft exists, verify body + tags and retry publish once
+2. article-01 — ready as fallback/next publish asset after article-02 if the draft is missing or still blocked
+3. article-03 — already published; Telegram summary is backfilled locally, so keep monitoring T+1 / T+3 / T+7 signals and reuse the live Viblo URL in future distribution copy
 
 ## Draft recovery checklist
 
