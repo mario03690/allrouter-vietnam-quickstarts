@@ -57,6 +57,10 @@ This repo contains minimal quickstart examples and companion assets based on pub
 
 - article-03 — Viblo: https://viblo.asia/p/cach-dung-codex-cli-tai-viet-nam-khong-can-vpn-setup-tu-a-den-z-gjLN0MeA432
 
+## Draft / unpublished status
+
+- article-01 — local logged-in edit view resolves to `/p/web-van-dung-duoc-nhung-cli-lai-fail-vi-sao-workflow-ai-coding-hay-bi-dut-doan-o-viet-nam-pPLkN1lZJRZ`, but an external HTTP fetch still returns 404, so do not distribute it as a public link yet
+
 ## Current queue
 
 1. article-02 — check `https://viblo.asia/me/posts/drafts` in the same logged-in local Chrome session first; if the auto-saved draft exists, verify body + tags and retry publish once
