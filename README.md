@@ -63,19 +63,19 @@ This repo contains minimal quickstart examples and companion assets based on pub
 
 ## Current queue
 
-1. article-02 — check `https://viblo.asia/me/posts/drafts` in the same logged-in local Chrome session first; if the auto-saved draft exists, verify body + tags and retry publish once
-2. article-01 — ready as fallback/next publish asset after article-02 if the draft is missing or still blocked
-3. article-03 — already published; Telegram summary is backfilled locally, so keep monitoring T+1 / T+3 / T+7 signals and reuse the live Viblo URL in future distribution copy
+1. article-01 — draft confirmed in the logged-in local Chrome Viblo session; body is present but visibility is still draft-only and the guessed public slug returns 404, so the next publish attempt must switch visibility and confirm a real `/p/...` URL before any Telegram send
+2. article-02 — no draft was found in the same checked local Chrome draft list, so keep it in recovery mode and only rebuild/retry after article-01 is either published or explicitly deprioritized
+3. article-03 — already published; Telegram summary is backfilled locally with the live Viblo URL, so keep monitoring T+1 / T+3 / T+7 signals and reuse the live URL in future distribution copy
 
 ## Draft recovery checklist
 
-If article-02 still blocks on the next run, use this order instead of rebuilding the asset pack:
+If article-01 still blocks on the next run, use this order instead of rebuilding assets blindly:
 
 1. Open Viblo in the same logged-in local Chrome session and visit `https://viblo.asia/me/posts/drafts` first.
-2. Check whether article-02 was auto-saved as a draft after the publish click.
-3. If found, open the draft, confirm the body and tags are intact, then retry publish once.
-4. Only after a real `/p/...` URL appears should `telegram-summary.md` be backfilled and distributed.
-5. If the draft is missing, rebuild from the local article file and keep article-01 as the fallback publish target.
+2. Open the existing article-01 draft, confirm the hidden textarea body is intact, and change visibility away from draft-only before saving/publishing.
+3. Only after a real `/p/...` URL resolves publicly should `telegram-summary.md` be backfilled and distributed.
+4. If article-01 remains blocked, re-check whether article-02 reappears in drafts before rebuilding from the local article file.
+5. Keep article-03 as the only confirmed live URL until a new public Viblo link is verified.
 
 ## Notes
 
