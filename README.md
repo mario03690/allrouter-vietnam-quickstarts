@@ -26,6 +26,8 @@ This repo contains minimal quickstart examples and companion assets based on pub
   - same companion structure as article-01
 - `article-03/`
   - same companion structure as article-01
+- `article-04/`
+  - same companion structure as article-01
 - root-level `curl-quickstart.sh`
 - root-level `python-quickstart.py`
 - root-level `node-quickstart.mjs`
@@ -60,9 +62,10 @@ This repo contains minimal quickstart examples and companion assets based on pub
 
 ## Current queue
 
-1. article-02 — check `https://viblo.asia/me/posts/drafts` in the same logged-in local Chrome session first; if the auto-saved draft exists, verify body + tags and retry publish once
-2. article-01 — now confirmed public; backfill the real URL into downstream Telegram/distribution copy and start T+1 / T+3 / T+7 monitoring
+1. article-02 — dry-run completed again in the logged-in local Chrome session on 2026-04-22; title + full body + tags were injected successfully, so the remaining step is one controlled publish click when we are ready to capture the real URL
+2. article-04 — next GitHub/Telegram-ready asset pack for the 403 / 429 / timeout debugging theme; keep `[VIBLO_URL]` placeholders until a real public Viblo URL exists
 3. article-03 — already published; Telegram summary is backfilled locally, so keep monitoring T+1 / T+3 / T+7 signals and reuse the live Viblo URL in future distribution copy
+4. article-01 — already public and its Telegram summary already uses the confirmed Viblo URL
 
 ## Draft recovery checklist
 
@@ -72,7 +75,13 @@ If article-02 still blocks on the next run, use this order instead of rebuilding
 2. Check whether article-02 was auto-saved as a draft after the publish click.
 3. If found, open the draft, confirm the body and tags are intact, then retry publish once.
 4. Only after a real `/p/...` URL appears should `telegram-summary.md` be backfilled and distributed.
-5. If the draft is missing, rebuild from the local article file and keep article-01 as the fallback publish target.
+5. If the draft is missing, repopulate from the local article file rather than rewriting it by hand.
+
+## Next distribution-ready asset
+
+- `article-04/` is ready as the next companion pack: curl, Python, Node examples plus Telegram/X copy for the 403/429/timeout troubleshooting angle.
+- Keep the Telegram summary in placeholder mode until Viblo yields a real public URL.
+- Use the GitHub pack immediately for repository trust-building and future Telegram distribution prep.
 
 ## Notes
 
