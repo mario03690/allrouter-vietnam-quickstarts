@@ -5,7 +5,7 @@
 
 Nhiều dev gặp tình trạng web vẫn chạy nhưng đến lúc dùng CLI hoặc agent workflow thì timeout, stream đứt hoặc lỗi quota/access. Bài này đi thẳng vào 4 tầng nguyên nhân và cách debug theo đúng thứ tự để đỡ mất thời gian sửa sai chỗ.
 
-🔗 Đọc đầy đủ: [VIBLO_URL]
+🔗 Đọc đầy đủ: https://viblo.asia/p/web-van-dung-duoc-nhung-cli-lai-fail-vi-sao-workflow-ai-coding-hay-bi-dut-doan-o-viet-nam-gdJzvmR9Jz5
 
 ## Long
 📝 Web vẫn dùng được nhưng CLI lại fail: vì sao workflow AI coding hay bị đứt đoạn sớm hơn mọi người nghĩ?
@@ -18,9 +18,9 @@ Bài viết đi qua:
 - thứ tự debug từ minimal request đến workflow dài
 - vì sao nên giữ client flow OpenAI-compatible để giảm switching friction
 
-🔗 Đọc đầy đủ: [VIBLO_URL]
+🔗 Đọc đầy đủ: https://viblo.asia/p/web-van-dung-duoc-nhung-cli-lai-fail-vi-sao-workflow-ai-coding-hay-bi-dut-doan-o-viet-nam-gdJzvmR9Jz5
 
-## Telegram follow-up without URL yet
+## Telegram follow-up
 - Hook: Web vẫn dùng được không có nghĩa là CLI đã sẵn sàng cho công việc thật; hãy test request tối thiểu trước khi nghi tool bị hỏng.
-- CTA mềm: Khi có URL Viblo thật, thay `[VIBLO_URL]` rồi đăng lại bản Short hoặc Long bên trên.
-- Safe note: Chưa có URL công khai thì không gửi bản có link để tránh phát tán link giả.
+- CTA mềm: Đọc xong bài Viblo có thể vào nhóm Telegram để trao đổi thêm về thứ tự debug workflow.
+- Safe note: Chỉ dùng URL đã xác nhận công khai ở trên; không thay bằng slug suy đoán khác.

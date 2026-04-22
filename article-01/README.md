@@ -27,3 +27,9 @@ How to use:
 
 Suggested article relation:
 Use these quickstarts as the companion repo assets linked from the Viblo article about CLI workflow instability.
+
+## Live distribution status
+
+- Viblo URL: https://viblo.asia/p/web-van-dung-duoc-nhung-cli-lai-fail-vi-sao-workflow-ai-coding-hay-bi-dut-doan-o-viet-nam-gdJzvmR9Jz5
+- Telegram summary: local draft can now be backfilled with the real Viblo URL; keep manual send separate from this automation run
+- Monitoring: start T+1 / T+3 / T+7 tracking now that the public URL is confirmed
