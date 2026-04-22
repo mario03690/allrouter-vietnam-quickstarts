@@ -32,15 +32,15 @@ Use these quickstarts as companion assets for the Viblo article about billing fr
 
 ## Distribution status
 
-- Viblo status: two local-Chrome-assisted publish attempts have now been executed on 2026-04-19
-- Current blocker: the editor accepted title/body/tags and the publish button was clicked again, but the browser still did not leave `/publish/post`, so no confirmed public URL was captured in this run
+- Viblo status: two local-Chrome-assisted publish attempts were already executed on 2026-04-19, and a 2026-04-22 follow-up draft check still did not surface article-02 inside `https://viblo.asia/me/posts/drafts`
+- Current blocker: the drafts page currently shows only one existing draft entry that is not article-02, and a fresh `/publish/post` refill attempt hit `opencli operate eval` syntax failure before the body could be re-injected, so no confirmed public URL was captured in this run
 - Telegram status: summary copy is ready locally and only needs the real Viblo URL backfilled
 - GitHub status: companion examples are already safe to reference publicly
 
 ## Recommended next operator check
 
-1. Re-open `https://viblo.asia/me/posts/drafts` from the same logged-in local Chrome session and verify whether this post was auto-saved after either publish click.
-2. If a draft exists, open it and confirm the title, full markdown body, and tags `ai/workflow/developer` are still present before retrying publish.
-3. If no draft exists, repopulate from `AllRouter_Viblo_Article_02_Final.md` rather than rewriting by hand.
+1. Re-open `https://viblo.asia/me/posts/drafts` from the same logged-in local Chrome session and verify once more that article-02 is absent.
+2. Go straight to a controlled refill from `AllRouter_Viblo_Article_02_Final.md` using a validated local-Chrome injection path rather than assuming the prior draft persisted.
+3. Confirm the title, full markdown body, and tags `ai/workflow/developer` are present before retrying publish.
 4. Only after obtaining the real public URL, replace `[VIBLO_URL]` inside `telegram-summary.md` and send the Telegram post.
-5. Keep article-01 as the fallback asset if article-02 remains blocked.
+5. Keep article-04 as the next GitHub/Telegram-ready asset if article-02 remains blocked, while article-01 stays available as the fallback already-public reference.
