@@ -62,7 +62,7 @@ This repo contains minimal quickstart examples and companion assets based on pub
 
 ## Current queue
 
-1. article-02 — 2026-04-22 re-check on `https://viblo.asia/me/posts/drafts` showed only one existing draft entry and it was not article-02; a fresh local-Chrome open of `/publish/post` also hit `opencli operate eval` syntax failure before body injection, so article-02 remains blocked until the next controlled refill + publish attempt captures a real public URL
+1. article-02 — 2026-04-23 re-check on `https://viblo.asia/me/posts/drafts` still showed only one existing draft entry and it was the already-public article-01, not article-02; local Chrome + AppleScript `execute javascript` now can refill title/body successfully (visible/hidden textarea both 9459 chars), but the publish step still did not yield a real Viblo `/p/...` URL because the active Chrome tab drifted away before confirmation, so article-02 remains blocked until the next controlled publish attempt captures a public URL
 2. article-04 — next GitHub/Telegram-ready asset pack for the 403 / 429 / timeout debugging theme; keep `[VIBLO_URL]` placeholders until a real public Viblo URL exists
 3. article-03 — already published; Telegram summary is backfilled locally, so keep monitoring T+1 / T+3 / T+7 signals and reuse the live Viblo URL in future distribution copy
 4. article-01 — already public and its Telegram summary already uses the confirmed Viblo URL
